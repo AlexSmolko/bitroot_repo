@@ -3,11 +3,10 @@ def oops():
 
 def trapper():
     try:
-       a = [1, 2, 3]
-       print(a[4])
-    except:
         oops()
-
+    except IndexError:
+       print("Cathed")
+        
 trapper()
 
 """So, when we replace the IndexError with KeyError, but not change the condition and it will be the same 
