@@ -62,8 +62,8 @@ def search(database, choice):
             print(item[search_key])
             search_result.append(item[search_key])
             break
-    if item[search_key] != search_query:
-            print("You input the wrong data")
+        if not item[search_key]:
+            print("No results found")
     print(len(search_result))
     return search_result
 
@@ -92,8 +92,7 @@ def update_item_by_phonenumber(database):
                 return u_rec
             if changing == "No":
                 break
-            message = print('Your current record is changed now')
-            return message
+
 
 menu = print(""" Select the number of the operation which you need:
                 1. Add new entries;
@@ -122,6 +121,7 @@ try:
         if choice == '8':
             print(main_dict)
             update_item_by_phonenumber(main_dict)
+            print('Your current record is changed now')
             print(main_dict)
         if choice == '9':
             break
