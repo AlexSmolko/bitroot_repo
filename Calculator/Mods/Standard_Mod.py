@@ -1,10 +1,10 @@
-from Python_Practice.Beetroot_Home_Lessons.Calculator import Main
+#from Python_Practice.Beetroot_Home_Lessons.Calculator import Main
 from Python_Practice.Beetroot_Home_Lessons.Calculator.Mods.Operations import Operations
 
-def standard_module():
+def standard_module(operations, name):
         while True:
-            operation = input("Input your operation please, " + Main.name + ": ")
-            if operation not in Main.operations:
+            operation = input(f"Input your operation please, {name} : ")
+            if operation not in operations:
                 print("You entered incorrect operation")
                 continue
             if operation == 'exit':

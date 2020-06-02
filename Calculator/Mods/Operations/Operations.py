@@ -1,9 +1,9 @@
-from Python_Practice.Beetroot_Home_Lessons.Calculator import Main
+#from Python_Practice.Beetroot_Home_Lessons.Calculator import Main
 
 
 def operations(operation):
     while True:
-        if operation not in Main.operations:
+        if operation not in operations:
             print("You entered incorrect operation")
             continue
         if operation == 'exit':
