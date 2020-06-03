@@ -35,12 +35,10 @@ class TVController:
         return self.show_channel()
 
     def is_exist(self, name_of_channel):
-        # if num_of_channel >= len(self.channels):
-        #    return print("No")
         if name_of_channel not in self.channels:
-            return print("No")
+            return "No"
         else:
-            return print("Yes")
+            return "Yes"
 
     def show_channel(self):
         return print(self.channels[self.num_of_channel - 1])

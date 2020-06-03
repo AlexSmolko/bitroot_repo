@@ -1,7 +1,7 @@
 signs = ["+", "-", "*", "/", "%", "//", "**"]
 
 
-def automode(operations, name):
+def auto_module(operations, name):
     def expression_result(sign, result):
         if sign in signs:
             operand2 = sign
@@ -22,11 +22,11 @@ def automode(operations, name):
                 continue
 
             if operation == "the_square_root_of_the_number":
-                number = (input("Enter a number which you would wish to handle:"))
+                number = (input("Enter a number which you would wish to handle: "))
                 if int(number) < 0:
                     print("Operation impossible, because impossible to get the square root of a negative number")
                 sqrt_op = int(number) ** (1 / 2)
-                print(f'sqrt of{number} = {int(sqrt_op)}')
+                print(f'sqrt of {number} = {int(sqrt_op)}')
                 continue
 
             if operation == "round_off_the_number":

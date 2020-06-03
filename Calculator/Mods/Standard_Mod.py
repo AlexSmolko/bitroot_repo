@@ -1,5 +1,3 @@
-#from Python_Practice.Beetroot_Home_Lessons.Calculator import Main
-from Python_Practice.Beetroot_Home_Lessons.Calculator.Mods.Operations import Operations
 
 def standard_module(operations, name):
         while True:
@@ -8,8 +6,8 @@ def standard_module(operations, name):
                 print("You entered incorrect operation")
                 continue
             if operation == 'exit':
-                print("You finished the program.")
-                print("Good buy, Dear user!")
+                print("You finished work with this module.")
+                print("But maybe you wish to change them to another!")
                 break
             if operation == "round_off_the_number":
                 number = input("Please enter the number: ")
